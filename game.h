@@ -269,7 +269,7 @@ void game_loop_code()
 			if (RAM[0x9D])
 			{
 				if (asm_loaded) {
-					ASM.start_JFK_thread(); //This runs the ASM. 
+					ASM.start_JFK_thread(); //This runs the ASM.
 				}
 				if (lua_loaded) {
 					lua_run_main();
