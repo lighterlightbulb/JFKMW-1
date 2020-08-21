@@ -977,7 +977,7 @@ public:
 		}
 		invisible = INVINCIBILITY_FRAMES > 0 ? !invisible : false;
 
-		double GRAV = -double(RAM[0x7C]);
+		double GRAV = -double(RAM[0x7C]) / (1 + (p_pad[button_a] || p_pad[button_b]));
 		bool RUN = false;
 		bool MOV = false;
 		bool SLIGHT_HIGH_SPEED = false;
@@ -1156,9 +1156,6 @@ public:
 							//jump_is_spin = false;
 						}
 					}
-				}
-				if (p_pad[button_a] || p_pad[button_b]) {
-					GRAV = GRAV * 0.5;
 				}
 
 				double SLOPE_ADD = 0;
