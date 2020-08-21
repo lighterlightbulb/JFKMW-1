@@ -25,3 +25,6 @@ If you know how to code, submit fixes. If you like to test stuff, make levels an
 * SFML
 * Lua 5.3
 * SNES_SPC (Included with this, you need to build a .lib using the CMakeLists in there)
+
+## Contact
+Discord: https://discord.gg/cejeea8
