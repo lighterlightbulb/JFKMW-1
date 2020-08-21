@@ -200,7 +200,7 @@ public:
 		createParticle(0x44, 0x11, 0x8, 5, x, y - 24.0, 0, 0, 0);
 		if (!jump_is_spin)
 		{
-			if (p_pad[button_b])
+			if (p_pad[button_b] || p_pad[button_a])
 			{
 				Y_SPEED = Calculate_Speed(1408);
 			}
@@ -1275,9 +1275,8 @@ public:
 				else {
 					LAST_X_SPEED_ON_FL = X_SPEED;
 				}
-				if (Y_SPEED < Calculate_Speed(-1312.0)) {
-					Y_SPEED = Calculate_Speed(-1312.0);
-				}
+				double max_fall = (p_pad[button_a] || p_pad[button_b]) ? Calculate_Speed(-1072.0) : Calculate_Speed(-1120.0);
+				Y_SPEED = max(max_fall, Y_SPEED);
 
 				if (!Move(X_SPEED + Calculate_Speed(double(int_fast8_t(RAM[0x7B])) * 16.0), 0.0)) {
 					X_SPEED = 0.0;

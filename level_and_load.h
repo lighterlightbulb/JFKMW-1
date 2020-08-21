@@ -330,6 +330,7 @@ public:
 		RAM[0x1426] = 0;
 		RAM[0x1B89] = 0;
 		RAM[0x1B88] = 0;
+		RAM[0x1420] = 0;
 
 		doRetry = true;
 
