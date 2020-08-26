@@ -17,8 +17,11 @@ This is a fork of the original JFK Mario World, which has since kicked the bucke
 * Almost no limitations, 128 sprites on screen at once without any FPS drops.
 * 4bpp/2bpp GFX rendering, OAM with more features like scaling, rotation, size, all palette rows.
 
-## How can I help?
+## Contributing
 If you know how to code, submit fixes. If you like to test stuff, make levels and test the craziest stuff you can think of and try to find bugs, then report them in issues. Everything helps! We especially need help on making the game physics accurate. Also if a multiplayer server is up, help us test the netcode by just playing the game.
+
+## License
+This is free and unencumbered software released into the public domain.
 
 ## Requirements / Dependencies
 * SDL2
