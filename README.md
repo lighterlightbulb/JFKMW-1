@@ -1,7 +1,9 @@
-# JFK Mario World
+# Super Mario World
 A remake/fangame of Super Mario World in C++/C. Sort of an engine for making Mario games that need to be based off of Super Mario World.
 
 The code hosted here contains no copyrighted assets or any stolen code. Most things have been reverse engineered and recoded completely from the original game, while also trying to keep compatibility with custom resources made for the original game.
+
+This is a fork of the original JFK Mario World, which has since kicked the bucket. Most of the code here is 99.9% accurate to the original JFK Mario World. This serves as a rehost of the JFK Mario World.
 
 ## Features
 * Fully working engine with tons of features.
@@ -25,6 +27,3 @@ If you know how to code, submit fixes. If you like to test stuff, make levels an
 * SFML
 * Lua 5.3
 * SNES_SPC (Included with this, you need to build a .lib using the CMakeLists in there)
-
-## Contact
-Discord: https://discord.gg/cejeea8
